@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    
+</head>
+<body>
+    <h1>Formulario</h1>
+    
+    <form action="https://fi.jcaguilar.dev/v1/escuela/persona" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="h">Hombre</option>
+            <option value="m">Mujer</option>
+        </select>
+        
+        <label for="fh_nac">Fecha de Nacimiento:</label>
+        <input type="date" id="fh_nac" name="fh_nac" required>
+        
+        <label for="id_rol">Rol:</label>
+        <select id="id_rol" name="id_rol" required>
+            <option value="1">Alumno</option>
+            <option value="2">Profesor</option>
+            <option value="3">Administrativo</option>
+            <option value="4">Otro</option>
+        </select>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">

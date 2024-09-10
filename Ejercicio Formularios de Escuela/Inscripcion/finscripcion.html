@@ -1,0 +1,66 @@
+<!--{
+    "id": 0,
+    "id_estudiante": 0,
+    "id_materia": 0,
+    "calificacion": 10
+  }
+
+  {
+    description:	
+    Datos de la inscripción a guardar
+    
+    id	number
+    ID de la inscripción
+    
+    id_estudiante*	number
+    ID del estudiante inscrito
+    
+    id_materia*	number
+    ID de la materia inscrita
+    
+    calificacion*	number
+    minimum: 0
+    maximum: 10
+    Calificación obtenida por el estudiante (base 10)
+    
+    }-->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Formulario</title>
+        
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        
+        <form action="https://fi.jcaguilar.dev/v1/escuela/inscripcion" method="post">
+            <label for="id_estudiante">id_estudiante:</label>
+            <input type="text" id="id_estudiante" name="id_estudiante" required>
+      
+            <label for="id_materia">id_materia:</label>
+            <input type="text" id="id_materia" name="id_materia" required>
+  
+            <label for="calificacion">calificacion:</label>
+            <select id="calificacion" name="calificacion" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            
+           
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+    </html>
+    <link rel="stylesheet" href="style.css">
+  

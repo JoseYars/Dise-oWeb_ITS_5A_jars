@@ -1,0 +1,38 @@
+<!--    "id_inscripcion": 0,
+    "id_estudiante": 0,
+    "id_materia": 0,
+    "estudiante": "string",
+    "materia": "string",
+    "fecha": "2024-09-06"
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    
+    <form action="https://fi.jcaguilar.dev/v1/escuela/asiganciones" method="post">
+        <label for="id_inscripcion">id_inscripcion:</label>
+        <input type="text" id="id_inscripcion" name="id_inscripcion" required>
+
+        <label for="id_estudiante">id_estudiante:</label>
+        <input type="text" id="id_estudiante" name="id_estudiante" required>
+
+        <label for="id_materia">id_materia:</label>
+        <input type="text" id="id_materia" name="id_materia" required>
+
+        <label for="estudiante">estudiante:</label>
+        <input type="text" id="estudiante" name="estudiante" required>
+
+        <label for="materia">materia:</label>
+        <input type="text" id="materia" name="materia" required>
+
+
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
