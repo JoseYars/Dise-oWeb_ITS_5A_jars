@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="[Ramirez]">
+</head>
+<body>
+    <main>
+        <p id="resultado"></p>
+        <ul>
+            <li>
+                <a href="[Sanchez]"></a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <span class="[Jose A]"></span>
+    </footer>
+</body>
+</html>
+
+<script>
+    try {
+      const apellido1 = document.querySelector('meta[name="author"]').content
+      const hrefs = document.querySelector('main ul li a').href.split('/')
+      const apellido2 = hrefs[hrefs.length - 1]
+      const nombre = document.querySelector('footer span').classList[0]
+
+      if (!apellido1 || !apellido2 || !nombre) {
+        throw new Error()
+      }
+      
+      const el = document.getElementById('resultado')
+      el.style.color = 'forestgreen'
+      el.style.fontWeight = 700
+      el.innerHTML = `${nombre} ${apellido1} ${apellido2}, el ejercicio es correcto!`
+    } catch (error) {
+      const p = document.createElement('p')
+      p.style.color = 'red'
+      p.style.fontWeight = 700
+      p.innerHTML = 'Sigue intentando'
+      document.querySelector('body').append(p)
+    }
+  </script>
